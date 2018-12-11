@@ -1,0 +1,17 @@
+{
+  "name": "tracking-scripts-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-puppeteer"
+  },
+  "devDependencies": {
+    "csv-parse": "^4.1.0",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.6.0",
+    "puppeteer": "^1.11.0"
+  }
+}
