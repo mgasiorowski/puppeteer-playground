@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-var fs = require('fs');
+const fs = require('fs');
 const parse = require('csv-parse/lib/sync')
 
 describe('Tracking script', () => {
