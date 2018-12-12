@@ -20,7 +20,8 @@ describe('Tracking script', () => {
       // inject local file to webstie (more https://github.com/GoogleChrome/puppeteer/blob/v1.2.0/docs/api.md#pageaddscripttagoptions)
       await page.addScriptTag({path: scriptPath});
       // run script (more https://github.com/GoogleChrome/puppeteer/blob/v1.2.0/docs/api.md#pageevaluatepagefunction-args)
-      let result = await page.evaluate(scriptRunCommand);
+      const result = await page.evaluate(scriptRunCommand);
+      console.log(result)
       const buffer = await page.tracing.stop();
       const json = JSON.parse(buffer);
       // check if request sended
